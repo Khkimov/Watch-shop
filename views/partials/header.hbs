@@ -1,0 +1,29 @@
+<header class="header">
+  <div class="header-container">
+    <div class="header-logo">
+      <img src="img/watch.png" alt="watch" />
+    </div>
+    <div class="header-title"><h1>Handmade watch</h1></div>
+    <nav class="navigate">
+      <ul class="navigate-list">
+        <li class="navigate-item">
+          <button type="button" id="btng" class="btn btn-outline-dark">Обратная связь</button>
+        </li>
+        <li class="navigate-item">
+          <button type="button" class="btn btn-outline-dark"><a
+              class="anchor"
+              href="#footer"
+            >Наши контакты</a></button> 
+        </li>
+        <li class="navigate-item">
+          <button type="button" class="btn btn-outline-dark" id="admin">Admin</button>
+        </li>
+           {{#if user}}
+         <li class="navigate-item">
+          <button type="button" class="btn btn-outline-dark"   id="admin"><a href = "/admin/logout">Выход</a></button>
+          {{/if}}
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

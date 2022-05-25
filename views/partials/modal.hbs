@@ -1,0 +1,61 @@
+                        {{!-- Авторизация админа --}}
+ <form action="/admin/signin" method="post" class="formAvtUs" name="authorization">
+  <div class="mb-3">
+    <label for="avtName" placeholder="имя" class="form-label">Name</label>
+    <input type="text" class="form-control" id="name" name="name">
+  </div>
+  
+ <div class="mb-3">
+    <label for="avtPass" class="form-label">Password</label>
+    <input type="password" class="form-control" id="password" name="password">
+  </div>
+
+  <button type="submit" id="liveToastAut" class="btn btn-primary">Submit</button>
+  <button type="button" id="closeAvt" class="btn btn-primary">Close</button>
+</form>
+                      {{!-- Регистрация админа --}}
+<form action="/admin/signup" method="post" class="formRegMain" name="registration">
+  <div class="mb-3">
+    <label for="exampleInputName1" class="form-label">Name</label>
+    <input type="text" class="form-control" id="name" name="name">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Admin Key</label>
+    <input type="text" class="form-control" id="adminKey" name="adminKey" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="password" name="password">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="button" id="closeReg" class="btn btn-primary">Close</button>
+</form>
+
+                       {{!-- Отправка формы для юзера --}}
+<form class="formUsersPu" enctype="multipart/form-data" name="formaUser" action="/form/sendform" method="post">
+  <div class="mb-3">
+    <label for="formUsName" class="form-label">Name</label>
+    <input type="text" class="form-control" id="title" name="name">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPhone1" class="form-label">Phone</label>
+    <input type="text" class="form-control" id="phone" name="phone">
+  </div>
+  <div class="mb-3">
+    <label for="formUsEmail" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+    <div id="usEmailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputImg1" class="form-label">Image</label>
+    <input type="file" class="form-control" id="img" name="img">
+  </div>
+
+  <button type="submit" id =" sub" class="btn btn-primary">Submit</button>
+  <button type="button" id="closeUsers" class="btn btn-primary">Close</button>
+</form>
+
+
+
